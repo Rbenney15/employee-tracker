@@ -1,11 +1,11 @@
 // Dependencies 
 const inquirer = require("inquirer")
-const mysql = require("mysql")
+const mysql2 = require("mysql2")
 const cTable = require('console.table');
 
 require('dotenv').config();
 
-const connection = mysql.createConnection({
+const connection = mysql2.createConnection({
     host: "localhost",
     port: 3306,
     user: process.env.DB_USER,
@@ -95,6 +95,28 @@ function viewAllDepartments() {
       console.table(res)
       startPrompt()
     })
+}
+// Select Role Title for Add Employee Prompt
+var roleArr= [];
+function selectRole() {
+    connection.query("Select * FROM role", function(err, res) {
+        if (err) throw err
+        for (var i = 0; i < res.length; i++) {
+            roleArr.push(res[i].title);
+        }
+    })
+    return roleArr;
+}
+// Select The Managers for Add Employee Prompt
+var managersArr= [];
+function selectManager() {
+    connection.query("Select first_name, last_name FROM employee WHERE manager_id IS NULL", function(err, res) {
+        if (err) throw err
+        for (var i = 0; i < res.length; i++) {
+            managersArr.push(res[i].first_name);
+        }
+    })
+    return managersArr;
 }
 // Add Employee
 function addEmployee() { 
