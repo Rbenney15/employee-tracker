@@ -29,31 +29,24 @@ function startPrompt() {
         case "View All Employees?":
             viewAllEmployees();
             break;
-
         case "View All Employees By Roles?":
             viewAllRoles();
             break;
-
         case "View All Employees By Department?":
             viewAllDepartments();
             break;
-
         case "Add Employee?":
             addEmployee();
             break;
-
         case "Update Employee?":
             updateEmployee();
             break;
-
         case "Add Role?":
             addRole();
             break;
-
         case "Add Department?":
             addDepartment();
             break;
-        
         case "EXIT":
             exitApp();
             break;
