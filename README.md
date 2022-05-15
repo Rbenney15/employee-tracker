@@ -22,7 +22,10 @@ https://user-images.githubusercontent.com/98703735/168493298-4d8efc1a-b0c7-4e31-
 
 
 # Description
-This is a command line application is a employee management tool, built with the idea that a user that needs to manage a employee database. Giving them the ability to add, remove, and view employee information all from within the command line.  
+This is a employee management application built for the command line. This application was built with the following user story in mind:
+AS A business owner
+I WANT to be able to view and manage the departments, roles, and employees in my company
+SO THAT I can organize and plan my business
 
 # Installation
 * From your command line, install the following dependencies:
@@ -30,12 +33,12 @@ This is a command line application is a employee management tool, built with the
     * mysql2
     * console.table
 * Connect to MySQL in the command line and run both source db/schema.sql and source db/seeds.sql to manually seed the data.
-Sourcing and Seeding Tables demo:
-https://user-images.githubusercontent.com/98703735/168493152-408689de-a4ad-4990-9709-de2fed240e94.mp4
+* As shown in the above Sourcing and Seeding Tables demo video.
 
 # Usage
 * Open Terminal
 * Initialize the application by typing npm start
+* Demo video above to show how the application functions
 
 # Questions
 * GitHub url where the project is located: https://github.com/Rbenney15/employee-tracker.git
