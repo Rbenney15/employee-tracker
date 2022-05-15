@@ -1,16 +1,17 @@
-const mysql = require("mysql2")
+// require('dotenv').config();
 
-const connection = mysql.createConnection({
-    host: "localhost",
-    port: 3306,
-    user: 'root',
-    password: 'u7q3*7bHZVmpuQZc@baP6bJmG',
-    database: 'employee_db'
-})
+const mysql = require('mysql2');
 
-// Connection ID
-connection.connect(function(err) {
-    if (err) throw err;
-});
-
+// connect app to MySQL database
+const db = mysql.createConnection(
+    {
+        host: 'localhost',
+        // MySQL username, 'root' is default user
+        user: 'root',
+        // MySQL password
+        password: 'password',
+        database: 'employee_db'
+    }
+);
+// export for use in server.js
 module.exports = db;

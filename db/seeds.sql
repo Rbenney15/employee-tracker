@@ -25,7 +25,7 @@ VALUE
 ("Charles", "Wilson", NULL, 1),
 ("Howard", "Wheeler", NULL, 2),
 ("George", "Baumes", NULL, 3),
-("Rob", "Benney", 1, 4),
-("Chandler", "Vilander", 4, 5),
+("Rob", "Benney", 4, 4),
+("Chandler", "Vilander", 2, 5),
 ("Donte", "Brown", 1, 6),
-("Eric", "Wiggins", 2, 7);
+("Eric", "Wiggins", 3, 7);

@@ -20,7 +20,7 @@ CREATE TABLE role (
     CONSTRAINT fk_department FOREIGN KEY (department_id) REFERENCES department(id) ON DELETE SET NULL
 );
 
--- Employee Role Table --
+-- Employee Table --
 CREATE TABLE employee (
   id INTEGER AUTO_INCREMENT PRIMARY KEY,
   first_name VARCHAR(30) NOT NULL,
