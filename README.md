@@ -18,14 +18,12 @@ This is a command line application is a employee management tool, built with the
     * inquirer
     * mysql2
     * console.table
-    * dotenv
-* Make a copy of the .env.EXAMPLE file, fill out the required fields with your MYSQL info.
 * Connect to MySQL in the command line and run both source db/schema.sql and source db/seeds.sql to manually seed the data.
 (SEEDING DATABASE DEMO HERE)
 
 # Usage
 * Open Terminal
-* Initialize the application by typing node app.js
+* Initialize the application by typing npm start
 (APPLICATION DEMO HERE)
 
 # Questions

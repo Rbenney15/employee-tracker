@@ -9,7 +9,7 @@ const db = mysql.createConnection(
         // MySQL username, 'root' is default user
         user: 'root',
         // MySQL password
-        password: 'password',
+        password: 'passwordhere',
         database: 'employee_db'
     }
 );
