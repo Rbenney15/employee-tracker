@@ -42,4 +42,3 @@ SO THAT I can organize and plan my business
 
 # Questions
 * GitHub url where the project is located: https://github.com/Rbenney15/employee-tracker.git
-* If you have any questions, please feel free to reach me at: Rob.benney@gmail.com
